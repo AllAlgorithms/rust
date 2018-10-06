@@ -1,6 +1,6 @@
 use List::{Item, Nil};
 
-// linked list implementation in rust
+// Linked List implementation in rust
 
 fn main() {
     let mut list = List::new();
