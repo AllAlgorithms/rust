@@ -27,6 +27,6 @@ mod extrema {
 
 fn main() {
     let array = [1, 5, -3, 2, -1];
-    println!("The minimum of {:?} is {}", array, exterma::min(&array));
-    println!("The maximum of {:?} is {}", array, exterma::max(&array));
+    println!("The minimum of {:?} is {}", array, extrema::min(&array));
+    println!("The maximum of {:?} is {}", array, extrema::max(&array));
 }
