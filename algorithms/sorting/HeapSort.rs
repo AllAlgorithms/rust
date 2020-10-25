@@ -1,5 +1,5 @@
 mod sort {
-    pub fn heap_sort<T: Ord + std::fmt::Display + std::fmt::Debug>(array: &mut [T]) {
+    pub fn heap_sort<T: Ord + std::fmt::Debug>(array: &mut [T]) {
         println!("{:?}", array);
         let len = array.len();
         for i in (0..(len / 2)).rev() {
@@ -15,7 +15,7 @@ mod sort {
         println!("{:?}", array);
     }
 
-    fn heapify<T: Ord + std::fmt::Display + std::fmt::Debug>(array: &mut [T], n: usize, i: usize) {
+    fn heapify<T: Ord>(array: &mut [T], n: usize, i: usize) {
         let mut largest = i;
         let left = 2 * i + 1;
         let right = 2 * i + 2;
