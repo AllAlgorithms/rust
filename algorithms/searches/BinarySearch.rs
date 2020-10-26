@@ -1,7 +1,7 @@
 pub fn binary_search(array: &[i32], item: i32) -> i32 {
     let mut high: i32 = array.len() as i32 - 1;
     let mut low: i32 = 0;
-    let mut mid: i32 = 0;
+    let mut mid: i32;
 	while low <= high {
 		mid = ((high - low) / 2) + low;
 		let val = array[mid as usize];
